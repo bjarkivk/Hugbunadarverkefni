@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
-<<<<<<< HEAD
  * DemoController defines routes and the actions to be performed at respectively routes.
  * 
  * @author Bjarki Viðar Kristjánsson (bvk1@hi.is)
@@ -33,54 +32,25 @@ public class DemoController {
     
     // Adds an attribute to the model
     // demo/synaNotandi.jsp fetches this attribute and renders at /demo/notandi
-=======
- * Byrjunarcontroller sem stýrir hvað er gert þegar notandi eða viðmót
- * setur inn skipun 
- */
-
-@Controller
-@RequestMapping("/demo") // Request Mapping er gerð fyrir klasann til að slóðin byrji á /demo fyrir allar skipanir 
-public class DemoController {
-
-
-    // Þar sem klasinn hefur slóðina "/demo", er þessi slóð "/demo/page"
-    @RequestMapping("/page")
-    public String demoPage(){
-        return "demo/demo"; // skilar .jsp skrá sem er /webapp/WEB-INF/vefvidmot/demo/demo.jsp
-                            // skoðið application.properties til að sjá hvernig slóðin er sett
-    }
-    
->>>>>>> 6ee98f8c3d85a63de906deef78894026bcbe5837
     @RequestMapping("/notandi")
     public String notandi(Model model){
         model.addAttribute("nafn","Bjarki");
         return "demo/synaNotandi";
     }
     
-<<<<<<< HEAD
     // Renders demo/hvadaNotandi.jsp at /demo/spyrjaNotanda
-=======
-    
->>>>>>> 6ee98f8c3d85a63de906deef78894026bcbe5837
     @RequestMapping("/spyrjaNotanda")
     public String spyrjaNotandi(){
         return "demo/hvadaNotandi";
     }
     
-<<<<<<< HEAD
     // Defines a route at /demo/hver that will only respond for post requests.
     // Fetches data from post request and adds it to the model as an attribute.
     // Returns demo/synaNotandi.jsp which fetches the attribute and renders at /demo/hver.
-=======
->>>>>>> 6ee98f8c3d85a63de906deef78894026bcbe5837
     @RequestMapping(value="/hver", method=RequestMethod.POST)
     public String hver(@RequestParam(value="nafn",required=false)
     String nafn, ModelMap model){
         model.addAttribute("nafn", nafn);
         return "demo/synaNotandi";
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ee98f8c3d85a63de906deef78894026bcbe5837
 }
