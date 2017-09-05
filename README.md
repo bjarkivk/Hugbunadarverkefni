@@ -1,10 +1,14 @@
-# Vegavaktin
+# Vegavaktin - The Road Watch
+
+Hugbúnaðarverkefni við Háskóla Íslands, haustið 2017
+
+Java Spring vefforrit
 
 Höfundar
 
-Bjarki Viðar Kristjánsson
-Hinrik Snær Guðmundsson
-Huy Van Nguyen
-Valentin Oliver Loftsson
++ Bjarki Viðar Kristjánsson
++ Hinrik Snær Guðmundsson
++ Huy Van Nguyen
++ Valentin Oliver Loftsson
 
-Nánari upplýsingar á [heimasíðu](https://vegavaktin.herokuapp.com/).
+[Heimasíða](https://vegavaktin.herokuapp.com/)
