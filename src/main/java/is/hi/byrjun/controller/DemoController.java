@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/demo") 
 public class DemoController {
 
-
     // This RequestMapping is inside the "/demo" middleware. The absolute path is therefore /demo/page
     // Returns demo/demo.jsp file to be rendered at /demo/page
     @RequestMapping("/page")

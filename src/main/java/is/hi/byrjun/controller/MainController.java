@@ -28,5 +28,4 @@ public class MainController {
     public String main_page(){
         return "routes/main_page";
     }
-
 }
