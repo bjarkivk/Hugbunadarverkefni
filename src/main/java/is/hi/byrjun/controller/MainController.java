@@ -13,17 +13,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
+ * @author Huy Van Nguyen (hvn1@hi.is)
+ * 
  * MainController defines the routes at the root of the website and the actions 
  * to be performed at respectively routes.
  * 
- * @author Huy Van Nguyen (hvn1@hi.is)
  */
 
 @Controller
 @RequestMapping("") // Request Mapping for the root
 public class MainController {
-
-    // Route for home page
+    
+    // Route for home page 
+    // @return String filePath.  filePath is supposed to point to a .jsp file.
     @RequestMapping("/")
     public String main_page(){
         return "routes/main_page";
