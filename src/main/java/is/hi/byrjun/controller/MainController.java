@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author Huy Van Nguyen (hvn1@hi.is)
+ * @author Bjarki Viðar Kristjánsson (bvk1@hi.is)
  * 
  * MainController defines the routes at the root of the website and the actions 
  * to be performed at respectively routes.
